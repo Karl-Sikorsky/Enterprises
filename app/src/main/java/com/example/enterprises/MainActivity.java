@@ -17,30 +17,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-ImageView toChooseButton, toRegionButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
-     toChooseButton = (ImageView) findViewById(R.id.button2);
-        toRegionButton = (ImageView) findViewById(R.id.button);
-        toChooseButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+
                 Intent intent = new Intent(MainActivity.this, ChooseActivity.class);
-                intent.putExtra("code","деяка галузь ");
+                intent.putExtra("code","підприємства");
                 startActivity(intent);
-            }
-        });
-        toRegionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ChooseActivity.class);
-                intent.putExtra("code","регіон");
-                startActivity(intent);
-            }
-        });
+
+
 
 
     }

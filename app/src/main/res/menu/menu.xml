@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/activity_search_menu_item"
+        android:icon="@drawable/magnify"
+        android:title="Update"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/activity_AZ_menu_item"
+
+        android:title="Сортировка А-Я"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/activity_ZA_menu_item"
+
+        android:title="Сортировка Я-А"
+        app:showAsAction="never"/>
+
+
+</menu>

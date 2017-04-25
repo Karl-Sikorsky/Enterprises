@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Enterprises</string>
+    <string name="app_name">. </string>
     <string name="item_default">some item</string>
     <string name="enterprises">Знайдені Підприємства</string>
     <string name="name">Назва</string>
@@ -12,4 +12,8 @@
     <string name="contact">Зв\'язатись</string>
     <string name="products">товари</string>
     <string name="desc">Знайдіть будь-які підприємства \n всього за кілька секунд \n разом з biz-gid</string>
+    <string name="enterprise_description">Адрес: \n\n\n Контактное лицо: \n\n\n Банковские Реквизиты: \n\n\n Информация о предприятии: \n\n\n</string>
+    <string name="search">search...</string>
+    <string name="branch_clasf">По отраслям:</string>
+    <string name="reg_clasf">По регионах:</string>
 </resources>

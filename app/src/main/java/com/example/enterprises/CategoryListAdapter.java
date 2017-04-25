@@ -17,21 +17,21 @@ import java.util.List;
 public class CategoryListAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Category> categories;
+    private List<Category> companies;
 
-    public CategoryListAdapter(Context context, List<Category> categories) {
+    public CategoryListAdapter(Context context, List<Category> companies) {
         this.context = context;
-        this.categories = categories;
+        this.companies = companies;
     }
 
     @Override
     public int getCount() {
-        return categories.size();
+        return companies.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return categories.get(position);
+        return companies.get(position);
     }
 
     @Override
@@ -42,9 +42,13 @@ public class CategoryListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = View.inflate(context, R.layout.item_product_list,null);
-        TextView tvDesc = (TextView) v.findViewById(R.id.textItem);
-        tvDesc.setText(categories.get(position).getDesription());
-        v.setTag(categories.get(position).getId());
+        TextView tvName = (TextView) v.findViewById(R.id.textItem);
+        tvName.setText(companies.get(position).getName());
+        TextView tvType = (TextView) v.findViewById(R.id.textItemType);
+        tvType.setText(companies.get(position).getType());
+        TextView tvTel = (TextView) v.findViewById(R.id.textItemTel);
+        tvTel.setText(companies.get(position).getTel());
+        v.setTag(companies.get(position).getId());
        return v;
     }
 }

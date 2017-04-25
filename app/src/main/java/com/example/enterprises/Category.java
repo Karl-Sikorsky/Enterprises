@@ -5,20 +5,40 @@ package com.example.enterprises;
  */
 
 public class Category {
-    String desription;
+    String name;
+    String type;
+    String tel;
     int id;
 
-    public Category(String desription, int id) {
-        this.desription = desription;
+    public Category(String name, String type, String tel, int id) {
+        this.name = name;
+        this.type = type;
+        this.tel = tel;
         this.id = id;
     }
 
-    public String getDesription() {
-        return desription;
+    public String getName() {
+        return name;
     }
 
-    public void setDesription(String desription) {
-        this.desription = desription;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public int getId() {
